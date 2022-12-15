@@ -125,7 +125,12 @@ def GaussS(A: np.ndarray, bvec: np.ndarray,
 def SOR_method(A: np.ndarray,bvec: np.ndarray,
                x0: np.ndarray, omega: float,
                error: float=0.01) -> np.ndarray:
-               
+    
+    ''' Linear equation solve with Sucessive Relaxation method.
+    Receives a matrix with the equations coefficients,
+    a vector of the independent terms, a first kick value
+    for the solution and the omega relaxation factor '''
+
     # Initiate variables
     loop = True
     counter = 0

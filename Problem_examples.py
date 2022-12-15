@@ -1,5 +1,5 @@
 import numpy as np
-import Gauss_Elim as ge
+import Methods as ge
 
 # Example of initial problem to SOR_method.
 def Problem_init(N: int):
